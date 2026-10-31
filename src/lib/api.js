@@ -36,29 +36,41 @@ export const api = {
   getActivities: safe(() => request('/activities'), mockActivities),
 
   // CRUD کاربران
-  createUser: async (data) => {
+createUser: async (data) => {
+  try {
     const res = await fetch(`${BASE}/users`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),
     })
-    if (!res.ok) throw new Error('خطا در افزودن کاربر')
-    return res.json()
-  },
+    if (!res.ok) throw new Error('API error')
+    return await res.json()
+  } catch {
+    // دمو: فقط یک id موقت بده
+    return { ...data, id: Date.now(), joinedAt: new Date().toISOString().slice(0, 10) }
+  }
+},
 
-  updateUser: async (id, data) => {
+updateUser: async (id, data) => {
+  try {
     const res = await fetch(`${BASE}/users/${id}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),
     })
-    if (!res.ok) throw new Error('خطا در ویرایش کاربر')
-    return res.json()
-  },
+    if (!res.ok) throw new Error('API error')
+    return await res.json()
+  } catch {
+    return { ...data, id }
+  }
+},
 
-  deleteUser: async (id) => {
-    const res = await fetch(`${BASE}/users/${id}`, { method: 'DELETE' })
-    if (!res.ok) throw new Error('خطا در حذف کاربر')
+deleteUser: async (id) => {
+  try {
+    await fetch(`${BASE}/users/${id}`, { method: 'DELETE' })
     return true
-  },
+  } catch {
+    return true
+  }
+},
 }
