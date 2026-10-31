@@ -1,0 +1,173 @@
+{
+  "users": [
+    {
+      "id": 2,
+      "name": "سارا احمدی",
+      "email": "sara@example.com",
+      "role": "editor",
+      "status": "active",
+      "avatar": "",
+      "joinedAt": "2024-02-20"
+    },
+    {
+      "id": 3,
+      "name": "رضا کریمی",
+      "email": "reza@example.com",
+      "role": "viewer",
+      "status": "inactive",
+      "avatar": "",
+      "joinedAt": "2024-03-10"
+    },
+    {
+      "name": "مریم رحیمی",
+      "email": "maryam@example.com",
+      "role": "editor",
+      "status": "active",
+      "joinedAt": "2024-04-05",
+      "id": 4
+    },
+    {
+      "name": "حسین نوری",
+      "email": "hosein@example.com",
+      "role": "viewer",
+      "status": "active",
+      "id": 5
+    },
+    {
+      "name": "محمد جواد",
+      "email": "mmja143@gmail.com",
+      "role": "admin",
+      "status": "active",
+      "joinedAt": "2026-10-30",
+      "id": 6
+    }
+  ],
+  "revenue": [
+    {
+      "id": 1,
+      "month": "فروردین",
+      "revenue": 14200000,
+      "users": 320
+    },
+    {
+      "id": 2,
+      "month": "اردیبهشت",
+      "revenue": 15800000,
+      "users": 410
+    },
+    {
+      "id": 3,
+      "month": "خرداد",
+      "revenue": 13500000,
+      "users": 380
+    },
+    {
+      "id": 4,
+      "month": "تیر",
+      "revenue": 17200000,
+      "users": 520
+    },
+    {
+      "id": 5,
+      "month": "مرداد",
+      "revenue": 18900000,
+      "users": 610
+    },
+    {
+      "id": 6,
+      "month": "شهریور",
+      "revenue": 16400000,
+      "users": 560
+    },
+    {
+      "id": 7,
+      "month": "مهر",
+      "revenue": 19800000,
+      "users": 680
+    },
+    {
+      "id": 8,
+      "month": "آبان",
+      "revenue": 21500000,
+      "users": 740
+    },
+    {
+      "id": 9,
+      "month": "آذر",
+      "revenue": 19200000,
+      "users": 700
+    },
+    {
+      "id": 10,
+      "month": "دی",
+      "revenue": 23100000,
+      "users": 820
+    },
+    {
+      "id": 11,
+      "month": "بهمن",
+      "revenue": 24800000,
+      "users": 890
+    },
+    {
+      "id": 12,
+      "month": "اسفند",
+      "revenue": 27400000,
+      "users": 960
+    }
+  ],
+  "traffic": [
+    {
+      "id": 1,
+      "name": "جستجوی ارگانیک",
+      "value": 4200
+    },
+    {
+      "id": 2,
+      "name": "مستقیم",
+      "value": 2800
+    },
+    {
+      "id": 3,
+      "name": "شبکه‌های اجتماعی",
+      "value": 1900
+    },
+    {
+      "id": 4,
+      "name": "ارجاعی",
+      "value": 1200
+    }
+  ],
+  "activities": [
+    {
+      "id": 1,
+      "user": "علی محمدی",
+      "action": "کاربر جدیدی ثبت‌نام کرد",
+      "time": "2024-06-01T10:30:00"
+    },
+    {
+      "id": 2,
+      "user": "سارا احمدی",
+      "action": "گزارش ماهانه را دانلود کرد",
+      "time": "2024-06-01T09:15:00"
+    },
+    {
+      "id": 3,
+      "user": "رضا کریمی",
+      "action": "تنظیمات را به‌روزرسانی کرد",
+      "time": "2024-05-31T18:45:00"
+    },
+    {
+      "id": 4,
+      "user": "مریم رحیمی",
+      "action": "گزارش جدیدی ایجاد کرد",
+      "time": "2024-05-31T14:20:00"
+    },
+    {
+      "id": 5,
+      "user": "حسین نوری",
+      "action": "از سیستم خارج شد",
+      "time": "2024-05-31T11:05:00"
+    }
+  ]
+}

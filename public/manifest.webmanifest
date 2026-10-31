@@ -1,0 +1,27 @@
+{
+  "name": "داشبورد آنالیتیکس",
+  "short_name": "آنالیتیکس",
+  "description": "داشبورد تحلیلی مدرن با React و Tailwind",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0a0e1a",
+  "theme_color": "#635BFF",
+  "lang": "fa",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

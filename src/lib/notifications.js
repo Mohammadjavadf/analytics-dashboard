@@ -1,0 +1,42 @@
+export const mockNotifications = [
+  {
+    id: 'n1',
+    type: 'user',
+    title: 'کاربر جدید ثبت‌نام کرد',
+    description: 'سارا احمدی به تیم پیوست',
+    time: new Date(Date.now() - 2 * 60 * 1000).toISOString(),
+    read: false,
+  },
+  {
+    id: 'n2',
+    type: 'report',
+    title: 'گزارش ماهانه آماده است',
+    description: 'گزارش درآمد مهرماه قابل دانلود است',
+    time: new Date(Date.now() - 60 * 60 * 1000).toISOString(),
+    read: false,
+  },
+  {
+    id: 'n3',
+    type: 'system',
+    title: 'تنظیمات به‌روزرسانی شد',
+    description: 'تغییرات شما با موفقیت ذخیره شد',
+    time: new Date(Date.now() - 3 * 60 * 60 * 1000).toISOString(),
+    read: true,
+  },
+  {
+    id: 'n4',
+    type: 'alert',
+    title: 'هشدار امنیتی',
+    description: 'ورود جدید از یک دستگاه ناشناس',
+    time: new Date(Date.now() - 26 * 60 * 60 * 1000).toISOString(),
+    read: false,
+  },
+  {
+    id: 'n5',
+    type: 'success',
+    title: 'پرداخت موفق',
+    description: 'تراکنش ۲,۴۸۰,۰۰۰ تومانی تأیید شد',
+    time: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(),
+    read: true,
+  },
+]

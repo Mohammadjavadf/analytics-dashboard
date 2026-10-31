@@ -1,0 +1,39 @@
+{
+  "name": "stripe-analytics-dashboard",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "api": "json-server --watch db.json --port 3001",
+    "dev:all": "concurrently \"npm run api\" \"npm run dev\"",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.10.0",
+    "@tanstack/react-table": "^8.21.3",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "framer-motion": "^11.15.0",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-error-boundary": "^6.1.6",
+    "react-hook-form": "^7.91.0",
+    "react-router-dom": "^6.28.1",
+    "recharts": "^2.15.0",
+    "sonner": "^1.7.4",
+    "tailwind-merge": "^2.6.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.0",
+    "json-server": "^0.17.4",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.0.5"
+  }
+}
