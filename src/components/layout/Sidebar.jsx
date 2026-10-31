@@ -14,8 +14,6 @@ const navItems = [
   { to: '/analytics',label: 'تحلیلی',   icon: BarChart3 },
   { to: '/users',    label: 'کاربران',  icon: Users },
   { to: '/settings', label: 'تنظیمات',  icon: Settings },
-{ to: '/ui-kit', label: 'UI Kit', icon: SparklesIcon },
-
 ]
 
 export default function Sidebar({ collapsed, onToggle, mobile = false }) {
